@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Terraria;
 using TShockAPI;
+using TShockAPI.DB;
 using System.IO.Streams;
 using Terraria.DataStructures;
 using Terraria.GameContent.Tile_Entities;
@@ -259,7 +260,7 @@ namespace HousingDistricts
 			int x2 = args.Data.ReadInt16();
 			int y2 = args.Data.ReadInt16();
 
-			var player = HTools.GetPlayerByID(args.Player.Index);;
+			var player = HTools.GetPlayerByID(args.Player.Index); ;
 
 			if (args.Player.AwaitingTempPoint > 0)
 			{
@@ -356,6 +357,13 @@ namespace HousingDistricts
 
 			int X = args.Data.ReadInt16();
 			int Y = args.Data.ReadInt16();
+			int liquid = args.Data.ReadByte();
+			int type = args.Data.ReadByte();
+
+			Region houseRegion = TShock.Regions.GetRegionByName("Housing");
+
+			if (houseRegion != null && TShock.Regions.InArea(X, Y))
+				TShock.Log.ConsoleInfo("[WARNING] Liquid Hazard ({0} {4} - {1} {2}) created by {3}.", type, X, Y, args.Player.User.Name, liquid);
 
 			if (!args.Player.Group.HasPermission(EditHouse))
 			{
