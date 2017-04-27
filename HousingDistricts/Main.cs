@@ -13,7 +13,7 @@ using Microsoft.Xna.Framework;
 
 namespace HousingDistricts
 {
-    [ApiVersion(1, 24)]
+    [ApiVersion(2, 1)]
     public class HousingDistricts : TerrariaPlugin
     {
 		public static HConfigFile HConfig { get { return HConfigFile.Config; } }
