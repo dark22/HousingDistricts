@@ -1,0 +1,8 @@
+C:\GitHub\HousingDistricts\HousingDistricts\bin\Release\HousingDistricts.dll
+C:\GitHub\HousingDistricts\HousingDistricts\bin\Release\HousingDistricts.pdb
+C:\GitHub\HousingDistricts\HousingDistricts\bin\Release\Mono.Data.Sqlite.dll
+C:\GitHub\HousingDistricts\HousingDistricts\bin\Release\OTAPI.dll
+C:\GitHub\HousingDistricts\HousingDistricts\bin\Release\TerrariaServer.exe
+C:\GitHub\HousingDistricts\HousingDistricts\bin\Release\TShockAPI.dll
+C:\GitHub\HousingDistricts\HousingDistricts\obj\Release\HousingDistricts.dll
+C:\GitHub\HousingDistricts\HousingDistricts\obj\Release\HousingDistricts.pdb

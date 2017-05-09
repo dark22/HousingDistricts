@@ -53,26 +53,27 @@
     <WarningLevel>0</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>References\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data">
-      <HintPath>..\..\1 - References\MySql.Data.dll</HintPath>
+      <HintPath>References\MySql.Data.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\1 - References\Newtonsoft.Json.dll</HintPath>
+      <HintPath>References\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="OTAPI">
-      <HintPath>..\..\1 - References\OTAPI.dll</HintPath>
+      <HintPath>References\OTAPI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="TerrariaServer">
-      <HintPath>..\..\1 - References\TerrariaServer.exe</HintPath>
-      <Private>False</Private>
+      <HintPath>References\TerrariaServer.exe</HintPath>
     </Reference>
     <Reference Include="TShockAPI">
-      <HintPath>..\..\1 - References\TShockAPI.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>References\TShockAPI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
